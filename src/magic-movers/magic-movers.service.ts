@@ -19,11 +19,11 @@ export class MagicMoverService {
   ) {}
 
   async findAll(): Promise<MagicMover[]> {
-    return this.magicMoverRepository.find();
+    return this.magicMoverRepository.find( {relations:{ missionLogs: { item:true } }});
   }
 
   async findOne(id: number): Promise<MagicMover> {
-    const magicMover = await this.magicMoverRepository.findOne({ where: { id } });
+    const magicMover = await this.magicMoverRepository.findOne({ where: { id } , relations:{ missionLogs: { item:true }}});
     if (!magicMover) {
       throw new BadRequestException(`Magic Mover with ID ${id} not found.`);
     }
