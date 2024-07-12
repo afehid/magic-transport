@@ -24,8 +24,6 @@
     <li><a href="#endpoints">Endpoints</a></li>
     <li><a href="#testing">Testing</a></li>
     <li><a href="#deployment">Deployment</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
   </ul>
 
   <h2 id="introduction">Introduction</h2>
@@ -274,16 +272,5 @@
     For deployment to production, ensure to set appropriate environment variables and configure your server environment accordingly.
   </p>
 
-  <h3>Contributing</h3>
-
-  <p>
-    Contributions are welcome! Please fork the repository and submit pull requests to propose changes.
-  </p>
-
-  <h3>License</h3>
-
-  <p>
-    This project is licensed under the MIT License - see the <a href="./LICENSE">LICENSE</a> file for details.
-  </p>
 
 </div>
